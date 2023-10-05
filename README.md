@@ -9,4 +9,4 @@ Incluye tanto los talleres como las practicas completamente resueltas.
 
 
 
-<span style="text-decoration: underline;">"Si puedes imaginarlo, puedes programarlo"</span>
+__Si puedes imaginarlo, puedes programarlo"__
