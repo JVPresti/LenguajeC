@@ -19,7 +19,7 @@ int main()
     int n, op;
     do
     {
-    again:
+    again: //Esta etiqueta es para la validacion
         printf("Ingrese un numero entero positvo: \n");
         scanf("%d", &n);
         if (n > 0)
@@ -42,6 +42,7 @@ int main()
     return 0;
 }
 
+//Funcion que verifica e imprime si es o no un numero perfecto
 int sumver(int n)
 {
     int i, sum;
@@ -51,10 +52,10 @@ int sumver(int n)
     {
         if (n % i == 0)
         {
-            sum += i;
+            sum += i; //Esto me da la suma de los divisores exactos
         }
     }
-    if (sum == n)
+    if (sum == n) //En caso de ser perfecto en este ciclo me lo imprime
     {
         printf("El numero es perfecto, y los numeros que lo componen son: ");
         for (i = 1; i < n; i++)
