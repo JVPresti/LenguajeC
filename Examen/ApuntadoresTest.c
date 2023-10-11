@@ -16,7 +16,7 @@ void main(){
     p1=p2;
     p2=&a;
     *p2=*p1;
-    printf("%d %d %d", a, b, c);
+    printf("\n%d %d %d", a, b, c);
 
 
 }
