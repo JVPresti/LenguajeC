@@ -1,14 +1,21 @@
+/*
+Taller6_ApuntadoresyArgumentosDeFunciones.c
+Jorge Antonio Vazquez Guzman
+11 de octubre de 2023
+Este archivo contiene los codigos del taller 6
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
+//Declaracion de los prototipos
 void multiPorDos(int *ptr);
 int numRan(int vect[], int n);
 int buscar(int vect[], int n, int num);
 void sumarElementos(int *ptr, int n, int num);
 
 int main(){
-    srand(time(NULL));
+    srand(time(NULL)); //Semilla
     int x, vect[7];
     int *ptr;
     x=3;
