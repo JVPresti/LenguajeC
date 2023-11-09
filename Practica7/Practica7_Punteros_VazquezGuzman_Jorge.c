@@ -1,13 +1,25 @@
+/*
+Practica 7. Punteros
+Vazquez Guzman Jorge
+8 de noviembre del 2023
+Construir un programa que realice las siguientes operaciones:
+1. Recibir dos números enteros como argumentos y mostrar su suma, resta, multiplicación y división.
+2. Ordenar alfabéticamente un arreglo de palabras.
+3. Calcular la suma de los elementos de una matriz de 3x3, encontrar el elemento más grande y mostrar su posición (fila y columna).
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
 #define NUM_PALABRAS 5
 
+// Declaracion de las funciones
 void argum(char *argv[]);
 void matriz();
 void ordenacion();
 
+// Funcion main que se encarga de mostrar el menu y llamar a las funciones correspondientes
 int main(int argc, char *argv[])
 {
     int op;
@@ -47,6 +59,8 @@ int main(int argc, char *argv[])
     return 0;
 }
 
+// Funcion que recibe dos numeros enteros como argumentos y muestra su suma, resta, multiplicacion y division
+// Los parametros de la funcion son el arreglo de argumentos
 void argum(char *argv[])
 {
     int num1 = atoi(argv[1]);
@@ -58,6 +72,8 @@ void argum(char *argv[])
     printf("La division de %d / %d = %d\n", num1, num2, num1 / num2);
 }
 
+// Funcion que ordena alfabeticamente un arreglo de palabras
+// No recibe parametros
 void ordenacion()
 {
     char *palabras[NUM_PALABRAS] = {"manzana", "banana", "cereza", "uva", "naranja"};
@@ -83,6 +99,8 @@ void ordenacion()
     }
 }
 
+// Funcion que calcula la suma de los elementos de una matriz de 3x3, encuentra el elemento mas grande y muestra su posicion (fila y columna)
+// No recibe parametros
 void matriz()
 {
     int matriz[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
